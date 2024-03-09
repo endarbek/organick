@@ -1,0 +1,30 @@
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
+}
+.xmark {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.carth1 {
+  margin: 0;
+}
+.button {
+  padding: 28px 46px;
+  border-radius: 16px;
+  background: rgb(39, 76, 91);
+  color: white;
+  text-decoration: none;
+}
+.wrap {
+  width: 400px;
+}
+.found {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
