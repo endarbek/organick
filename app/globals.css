@@ -10,6 +10,7 @@ body {
   margin: 0 auto;
 }
 .not {
+  background-color: rgb(143, 168, 168);
   background: url("/404.jpg") left center;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -18,6 +19,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding: 100px 0;
+  width: 100%;
 }
 
 .found {
@@ -28,6 +30,7 @@ body {
   gap: 10px;
 }
 .noth1 {
+  width: 100%;
   margin: 0;
   font-size: 300px;
   color: rgb(143, 168, 168);

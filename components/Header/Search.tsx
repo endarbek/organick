@@ -27,7 +27,7 @@ const Search = () => {
       </div>
       <div className={styles.cart} onClick={orderCancelled}>
         <button className={styles.cart__button}>
-          <FontAwesomeIcon icon={faCartShopping} className={styles.serch} />
+          <Image src="/cart.svg" alt="cart" width={23.53} height={22} />
         </button>
         <h3>Cart (0)</h3>
       </div>

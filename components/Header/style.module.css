@@ -107,8 +107,8 @@
 }
 .serch {
   color: white;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 @media screen and (max-width: 1650px) {
@@ -135,5 +135,10 @@
 @media screen and (max-width: 800px) {
   .inputs {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 19px 20px;
   }
 }
