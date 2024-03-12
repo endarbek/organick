@@ -7,6 +7,10 @@ import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
+interface INavigation {
+  active: boolean;
+}
+
 const LINKS = [
   { id: 1, title: "Home", href: "/" },
   { id: 2, title: "About", href: "/about" },
@@ -28,14 +32,14 @@ const LINKS = [
   { id: 6, title: "News", href: "/news" },
 ];
 
-const Navigation = () => {
+const Navigation = ({ active }: INavigation) => {
   const [show, setShow] = useState<number | null>(null);
   const showMenu = (id: number) => {
     setShow((prewShow) => (prewShow === id ? null : id));
   };
   const pathname = usePathname();
   return (
-    <nav className={styles.nav}>
+    <nav className={cn(styles.nav, active && styles.expand)}>
       {LINKS.map((link) => (
         <div key={link.id}>
           <Link
