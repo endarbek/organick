@@ -4,10 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Modal from "../shared/UI/Modal/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMagnifyingGlass,
-  faCartShopping,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart";
 
 const Search = () => {

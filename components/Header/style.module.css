@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
 }
 .search {
   display: flex;
@@ -111,6 +112,117 @@
   min-height: 20px;
 }
 
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hamburger {
+  background: #274c5b;
+  padding: 22px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  border-radius: 20px;
+  display: none;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is_active:hover {
+  opacity: 0.7;
+}
+.hamburger.is_active .hamburger_inner,
+.hamburger.is_active .hamburger_inner::before,
+.hamburger.is_active .hamburger_inner::after {
+  background-color: #ffffff;
+}
+
+.hamburger_box {
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger_inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger_inner,
+.hamburger_inner::before,
+.hamburger_inner::after {
+  width: 35px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger_inner::before,
+.hamburger_inner::after {
+  content: "";
+  display: block;
+}
+.hamburger_inner::before {
+  top: -10px;
+}
+.hamburger_inner::after {
+  bottom: -10px;
+}
+
+/*
+ * Spin
+ */
+.hamburger_spin .hamburger_inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger_spin .hamburger_inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+.hamburger_spin .hamburger_inner::after {
+  transition: bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger_spin.is_active .hamburger_inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger_spin.is_active .hamburger_inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+
+.hamburger_spin.is_active .hamburger_inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 @media screen and (max-width: 1650px) {
   .header {
     padding: 19px 42px;
@@ -120,8 +232,21 @@
   }
 }
 @media screen and (max-width: 1300px) {
+  .header {
+    background: #fff;
+    position: relative;
+  }
+  .menu {
+    padding: 20px;
+    margin-left: 100px;
+  }
   .nav {
-    display: none;
+    position: fixed;
+    transform: translateY(-100vh);
+  }
+  .hamburger {
+    font-size: 16px;
+    display: flex;
   }
 }
 @media screen and (max-width: 1450px) {
@@ -137,8 +262,19 @@
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
-  .header {
-    padding: 19px 20px;
-  }
+.expand {
+  padding: 35px;
+  background: #b6e4ae;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  transition: 0.9s;
+  transform: translateY(0);
 }
