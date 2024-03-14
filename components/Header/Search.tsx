@@ -26,7 +26,7 @@ const Search = () => {
         <button className={styles.cart__button}>
           <Image src="/cart.svg" alt="cart" width={23.53} height={22} />
         </button>
-        <h3>Cart (0)</h3>
+        <h3 className={styles.cart__h3}>Cart (0)</h3>
       </div>
     </div>
   );
