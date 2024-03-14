@@ -6,7 +6,6 @@ import cn from "clsx";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
 
 interface INavigation {
   active: boolean;
@@ -40,35 +39,40 @@ const Navigation = ({ active }: INavigation) => {
   };
   const pathname = usePathname();
   return (
-    <nav className={cn(styles.nav, active && styles.expand)}>
-      {LINKS.map((link) => (
-        <div key={link.id}>
-          <Link
-            href={link.href}
-            className={cn(styles.link, pathname === link.href && styles.active)}
-            onClick={() => showMenu(link.id)}
-          >
-            {link.title}
-          </Link>
-          {link.children && show === link.id && (
-            <ul className={styles.menu}>
-              {link.children.map((child) => (
-                <li key={child.id} className={styles.li}>
-                  <Link
-                    href={child.href}
-                    className={cn(
-                      styles.link,
-                      pathname === link.href && styles.active
-                    )}
-                  >
-                    {child.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ))}
+    <nav>
+      <ul className={cn(styles.nav, active && styles.expand)}>
+        {LINKS.map((link) => (
+          <li key={link.id} className={styles.nav__li}>
+            <Link
+              href={link.href}
+              className={cn(
+                styles.link,
+                pathname === link.href && styles.active
+              )}
+              onClick={() => showMenu(link.id)}
+            >
+              {link.title}
+            </Link>
+            {link.children && show === link.id && (
+              <ul className={styles.menu}>
+                {link.children.map((child) => (
+                  <li key={child.id} className={styles.li}>
+                    <Link
+                      href={child.href}
+                      className={cn(
+                        styles.link,
+                        pathname === child.href && styles.active
+                      )}
+                    >
+                      {child.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 };
