@@ -8,7 +8,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  overflow: hidden;
+  margin-bottom: 40px;
 }
 .footer__line {
   border: 1px solid rgb(213, 213, 213);
@@ -19,6 +19,7 @@
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  gap: 32px;
 }
 .contact__div {
   display: flex;
@@ -27,25 +28,25 @@
 }
 .contact__h1 {
   margin: 0;
-  color: rgb(39, 76, 91);
-  font-family: sans-serif;
-  font-size: 30px;
-  font-weight: 700;
   line-height: 35px;
-  padding-bottom: 24px;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 30px;
+  color: #274c5b;
 }
 .contact__h4 {
-  margin: 0;
-  color: rgb(39, 76, 91);
-  font-family: sans-serif;
-  font-size: 18px;
+  font-family: var(--font-openSans);
   font-weight: 700;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 165%;
+  text-align: right;
+  color: #525c60;
+  margin: 0;
 }
 .contact__h5 {
   margin: 0;
   color: rgb(82, 92, 96);
-  font-family: sans-serif;
+  font-family: var(--font-openSans);
   font-size: 18px;
   font-weight: 400;
   line-height: 165%;
@@ -54,11 +55,21 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  max-height: 285px;
+}
+.pages__h1 {
+  margin: 0;
+  line-height: 35px;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 30px;
+  color: #274c5b;
+  padding: 24px;
 }
 .pages__links {
   text-decoration: none;
   color: rgb(82, 92, 96);
-  font-family: sans-serif;
+  font-family: var(--font-openSans);
   font-size: 18px;
   font-weight: 400;
   line-height: 272.9%;
@@ -68,11 +79,11 @@
   border-right: 1px solid rgb(213, 213, 213);
   border-left: 1px solid rgb(213, 213, 213);
   padding: 0 40px;
-  gap: 23px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 23px;
 }
 .abouts {
   display: flex;
@@ -80,12 +91,12 @@
   justify-content: center;
 }
 .about__links {
+  padding-top: 49px;
   display: flex;
   align-items: center;
   gap: 15px;
 }
 .about__link {
-  padding-top: 20px;
   cursor: pointer;
   padding: 20px;
   border-radius: 100%;
@@ -99,13 +110,14 @@
 }
 .about__p {
   margin: 0;
-  color: rgb(82, 92, 96);
-  font-family: sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 165.4%;
   max-width: 543px;
   text-align: center;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+  text-align: center;
+  color: #525c60;
 }
 .organick {
   color: rgb(82, 92, 96);

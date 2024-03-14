@@ -6,6 +6,7 @@ import cn from "clsx";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 interface INavigation {
   active: boolean;

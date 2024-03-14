@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.pages}>
-          <h1 className={styles.contact__h1}>Utily Pages</h1>
+          <h1 className={styles.pages__h1}>Utily Pages</h1>
           <Link className={styles.pages__links} href="#">
             Style Guide
           </Link>
