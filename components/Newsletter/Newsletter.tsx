@@ -1,5 +1,5 @@
-import React from "react";
 import styles from "./style.module.css";
+import Button from "../shared/UI/Button/Button";
 
 const Newsletter = () => {
   return (
@@ -12,7 +12,9 @@ const Newsletter = () => {
             placeholder="Your email address"
             className={styles.form__input}
           />
-          <button className={styles.form__button}>Subscribe</button>
+          <Button background="blue" size={"wide"}>
+            Subscribe
+          </Button>
         </form>
       </div>
     </div>
