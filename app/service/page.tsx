@@ -1,7 +1,12 @@
-import React from "react";
+import styles from "../service/style.module.css";
 
-const page = () => {
-  return <div>Service</div>;
+const Service = () => {
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>Services</h1>
+      <div className={styles.foot}>What we Grow</div>
+    </div>
+  );
 };
 
-export default page;
+export default Service;
