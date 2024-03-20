@@ -1,31 +1,24 @@
-import Image from "next/image";
+import Banner from "@/components/Banner/Banner";
 import styles from "./page.module.css";
-import Button from "@/components/shared/UI/Button/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+import About from "@/components/About/About";
+import Product from "@/components/Product";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.banner}>
-        <div className={styles.content}>
-          <h3 className={styles.content__h3}>100% Natural Food</h3>
-          <h1 className={styles.content__h1}>
-            Choose the best healthier way of life
-          </h1>
-          <Link href="about" className={styles.link}>
-            <Button background={"yellow"}>
-              Explore Now
-              <FontAwesomeIcon icon={faArrowAltCircleRight} />
-            </Button>
-          </Link>
+      <Banner />
+      <div className={styles.banner__offer}>
+        <div className={styles.offer1}>
+          <h4 className={styles.offer1__h4}>Natural!!</h4>
+          <h3 className={styles.offer1__h3}>Get Garden Fresh Fruits</h3>
+        </div>
+        <div className={styles.offer2}>
+          <h4 className={styles.offer2__h4}>Offer!!</h4>
+          <h3 className={styles.offer2__h3}>Get 10% off on Vegetables</h3>
         </div>
       </div>
-      <div className="offer">
-        <div className="offer1"></div>
-        <div className="offer2"></div>
-      </div>
+      <About />
+      <Product />
     </div>
   );
 }

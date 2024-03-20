@@ -5,10 +5,16 @@ import styles from "./style.module.css";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 import Button from "../shared/UI/Button/Button";
 import Link from "next/link";
+import { useState } from "react";
 interface ICart {
   close: () => void;
 }
 const Cart = ({ close }: ICart) => {
+  const [cart, setCart] = useState([]);
+
+  const addProduct = () => {
+    setCart([...cart, item]);
+  };
   return (
     <div className={styles.wrap}>
       <div className={styles.cart}>

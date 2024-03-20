@@ -1,0 +1,131 @@
+.shop_single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/shop-single.jpg) no-repeat;
+  height: 450px;
+  font-family: var(--font-roboto);
+  font-weight: 800;
+  font-size: 70px;
+  color: #274c5b;
+}
+.details {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+  max-width: 1337px;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.image {
+  max-width: 600px;
+  position: relative;
+  background: #f9f8f8;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.product__p {
+  position: absolute;
+  top: 38px;
+  left: 35px;
+  max-width: 100px;
+  border-radius: 8px;
+  background: #274c5b;
+  padding: 5px 12px;
+  font-family: var(--font-openSans);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+.image_image {
+  border-radius: 30px;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.name {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 9px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.price__h3 {
+  margin: 0;
+  text-decoration: line-through;
+  font-family: var(--font-openSans);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  color: #b8b8b8;
+}
+.price__h2 {
+  margin: 0;
+  font-family: var(--font-openSans);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #274c5b;
+}
+.detail__h1 {
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  font-size: 40px;
+  color: #274c5b;
+}
+.detail__p {
+  max-width: 658px;
+  margin: 0;
+  font-family: var(--font-openSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+  color: #525c60;
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.form__div {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.form__h1 {
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 20px;
+  color: #274c5b;
+}
+.form__input {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 20px;
+  color: #274c5b;
+  text-align: right;
+  max-width: 134px;
+  border: 2px solid #274c5b;
+  border-radius: 16px;
+  padding: 28px;
+  background: #fff;
+}
