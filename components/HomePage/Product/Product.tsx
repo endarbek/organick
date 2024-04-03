@@ -2,10 +2,9 @@
 import { IProducts } from "@/types/products";
 import Image from "next/image";
 import styles from "./style.module.css";
-import Button from "../shared/UI/Button/Button";
+import Button from "../../shared/UI/Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 interface IProductProps {
   products: IProducts[];
@@ -20,18 +19,17 @@ const Product = ({ products }: IProductProps) => {
         <h1 className={styles.categories__h1}>Our Products </h1>
       </div>
       <div className={styles.products}>
-        {products.map((product) => (
+        {products.slice(0, 8).map((product) => (
           <div key={product.id} className={styles.product}>
-            <p className={styles.product__p}>{product.name}</p>
-            <Link href="shop-single" className={styles.link}>
-              <Image
-                className={styles.product__image}
-                src={`/img/${product.image.name}`}
-                alt={product.image.name}
-                width={335}
-                height={324}
-              />
-            </Link>
+            <p className={styles.product__p}>{product.categories?.title}</p>
+            <Image
+              onClick={() => router.push(`shop-single/${product.id}`)}
+              className={styles.product__image}
+              src={`/img/${product.image.name}`}
+              alt={product.image.name}
+              width={335}
+              height={324}
+            />
             <div className={styles.product__rating}>
               <h1
                 className={styles.product__rating__h1}

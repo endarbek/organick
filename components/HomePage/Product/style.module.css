@@ -29,6 +29,7 @@
   margin: 0 auto;
 }
 .product__p {
+  margin: 0;
   max-width: 100px;
   border-radius: 8px;
   background: #274c5b;

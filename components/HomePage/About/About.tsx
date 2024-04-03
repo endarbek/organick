@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./style.module.css";
-import Button from "../shared/UI/Button/Button";
+import Button from "../../shared/UI/Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";

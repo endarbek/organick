@@ -9,6 +9,18 @@ export interface IProducts {
   updatedAt: string;
   publishedAt: string;
   image: Image;
+  related?: IProducts[];
+  categories?: Category;
+}
+
+export interface Category {
+  id: number;
+  title: string;
+  products: IProducts[];
+}
+
+export interface BasketProduct extends IProducts {
+  number: number;
 }
 
 export interface Image {

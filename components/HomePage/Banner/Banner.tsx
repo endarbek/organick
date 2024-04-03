@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../shared/UI/Button/Button";
+import Button from "../../shared/UI/Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./style.module.css";

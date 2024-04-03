@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 import cn from "clsx";
 interface ButtonProps {
-  background: "blue" | "yellow" | "white";
+  background: "blue" | "yellow" | "white" | "border";
   children: React.ReactNode;
   click?: () => void;
   size?: "xs" | "lg" | "wide";
