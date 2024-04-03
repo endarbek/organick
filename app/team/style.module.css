@@ -1,0 +1,81 @@
+.figure {
+  background: url(/OurTeam.jpg);
+  background-size: cover;
+  height: 385px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figureTitle {
+  font-family: var(--font-roboto);
+  color: #274c5b;
+}
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionInfo {
+  text-align: center;
+}
+.sectionTitle1 {
+  font-family: var(--font-yellowtail);
+  color: #7eb693;
+}
+.sectionTitle2 {
+  font-family: var(--font-roboto);
+  color: #274c5b;
+}
+.mainInfo {
+  text-align: center;
+}
+.mainTitle1 {
+  font-family: var(--font-yellowtail);
+  color: #7eb693;
+}
+.mainTitle2 {
+  font-family: var(--font-roboto);
+  color: #274c5b;
+}
+.mainCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.mainCartina {
+  max-width: 400px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.mainCardInfo {
+  background: #f9f8f8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.mainConInfo {
+  padding: 10px;
+  transition: 0.3s;
+}
+.mainConInfo:hover {
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 5px 10px 5px #a1a1a1;
+}
+.mainName {
+  font-family: var(--font-roboto);
+  color: #274c5b;
+  margin: 0;
+}
+.mainSocialnetwork {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.mainWork {
+  font-family: var(--font-yellowtail);
+  color: #7eb693;
+}
