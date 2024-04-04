@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 4,
-    image: "/img/Image3.png",
+    image: "/img/tomato.png",
     title: "Natural Tommato",
     category: "Fruits",
   },
@@ -47,18 +47,7 @@ const data = [
 const Portfolio = () => {
   return (
     <div className={styles.wrapper}>
-      {/* <PortfolioCard */}
-      {/*    url="/img/portfolio1.pn */}
-      {/*    title="fsfdsfsd" */}
-      {/*    category="fdsfsdfs" */}
-      {/*  / */}
-      <Image
-        className={styles.banner}
-        src="/img/Banner.png"
-        alt=""
-        width={1920}
-        height={450}
-      />
+      <h1 className={styles.portfolioBanner}>Portfolio Standard</h1>
       <div className={styles.portfolio}>
         {data.map((item) => {
           return (
@@ -68,8 +57,8 @@ const Portfolio = () => {
                   className={styles.image}
                   src={item.image}
                   alt=""
-                  width={500}
-                  height={500}
+                  width={696}
+                  height={464}
                 />
                 <div className={styles.linkWrap}>
                   <Link href={`/portfolio/${item.id}`}>
@@ -84,42 +73,6 @@ const Portfolio = () => {
             </div>
           );
         })}
-
-        {/* <div className={styles.card}>
-          <Image src="/img/Image1.png" alt="" width={500} height={500} />
-          <div className={styles.info}>
-            <h4 className={styles.title}>Organic Carrot</h4>
-            <p className={styles.category}>Farmer</p>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <Image src="/img/Image2.png" alt="" width={500} height={500} />
-          <div className={styles.info}>
-            <h4 className={styles.title}>Organic Betel Leaf</h4>
-            <p className={styles.category}>Leaf</p>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <Image src="/img/Image3.png" alt="" width={500} height={500} />
-          <div className={styles.info}>
-            <h4 className={styles.title}>Natural Tommato</h4>
-            <p className={styles.category}>Fruits</p>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <Image src="/img/Image5.png" alt="" width={500} height={500} />
-          <div className={styles.info}>
-            <h4 className={styles.title}>Black Raspberry</h4>
-            <p className={styles.category}>Farmer</p>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <Image src="/img/Image6.png" alt="" width={500} height={500} />
-          <div className={styles.info}>
-            <h4 className={styles.title}>Honey Orange</h4>
-            <p className={styles.category}>Farmer</p>
-          </div>
-        </div> */}
       </div>
     </div>
   );
