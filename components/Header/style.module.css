@@ -1,4 +1,5 @@
 .header {
+  max-width: 1595px;
   padding: 49px 0;
   margin: 0 auto;
   display: flex;
@@ -35,7 +36,7 @@
   align-items: center;
   justify-content: center;
   gap: 36px;
-  overflow: hidden;
+  transition: 0.9s;
 }
 .link {
   position: relative;
@@ -97,15 +98,18 @@
   padding: 17px;
 }
 .menu {
+  border: 3px solid #ccc;
+  width: 230px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   position: absolute;
-  top: 90px;
+  top: 40px;
+  left: 0;
   background: #eff6f1;
-  padding: 50px;
-  border-radius: 20px;
+  padding: 20px 50px 20px 20px;
+  border-radius: 10px;
 }
 .li {
   color: white;
@@ -116,7 +120,10 @@
   min-width: 20px;
   min-height: 20px;
 }
-
+.nav__li {
+  list-style: none;
+  position: relative;
+}
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -242,14 +249,29 @@
     position: relative;
   }
   .menu {
+    width: 200px;
+    gap: 10px;
+    top: 0;
     background: none;
     border: 3px solid #ccc;
     padding: 20px;
     margin-left: 100px;
   }
   .nav {
-    position: fixed;
-    transform: translateX(-550vh);
+    margin: 0;
+    padding: 35px;
+    background: #eff6f1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: 0.9s;
+    transform: translateX(-100%);
   }
   .hamburger {
     font-size: 16px;
@@ -281,15 +303,8 @@
     display: flex;
   }
 }
-/* @media screen and (max-width: 550px) {
-  .cart__h3 {
-    display: none;
-  }
-  .cart {
-    padding: 5px;
-  }
-} */
 .expand {
+  margin: 0;
   padding: 35px;
   background: #eff6f1;
   display: flex;
@@ -301,7 +316,6 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: 400px;
   transition: 0.9s;
   transform: translateX(0);
 }
