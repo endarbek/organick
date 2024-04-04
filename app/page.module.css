@@ -1,0 +1,119 @@
+.banner {
+  margin-bottom: 200px;
+  background: url(/img/banner.jpg) no-repeat;
+}
+.banner__offer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 200px;
+}
+.offer1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  background: url(../public/img/banner-fruits.jpg) no-repeat;
+  background-position: 50%;
+  padding: 109px 55px;
+  border-radius: 30px;
+}
+.offer1__h4 {
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-yellowtail);
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+}
+.offer1__h3 {
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 40px;
+  color: #fff;
+  max-width: 277px;
+}
+.offer2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  background: url(../public/img/banner-vegetables.jpg) no-repeat;
+  padding: 109px 55px;
+  border-radius: 30px;
+}
+.offer2__h4 {
+  margin: 0;
+  font-family: var(--font-yellowtail);
+  font-weight: 400;
+  font-size: 36px;
+  color: #7eb693;
+}
+.offer2__h3 {
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 40px;
+  color: #274c5b;
+  max-width: 277px;
+}
+@media screen and (max-width: 1400px) {
+  .banner__offer {
+    margin: 0 20px 200px 20px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .banner__offer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .offer1 {
+    background-size: cover;
+    width: 100%;
+  }
+  .offer2 {
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner__offer {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .offer1 {
+    padding: 30px 60px;
+  }
+  .offer2 {
+    padding: 30px 60px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .offer1 {
+    padding: 40px 20px 30px;
+    background: #f96893;
+  }
+  .offer2 {
+    padding: 40px 20px 20px;
+    background: #ebf0f4;
+  }
+  .offer1__h3 {
+    font-size: 32px;
+  }
+  .offer2__h3 {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  background: #f1f8f4;
+  padding: 187px 0;
+  margin-bottom: 187px;
+}
+.link {
+  text-decoration: none;
+}
+.galery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/img/juis.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 580px;
+  width: 612px;
+}
+.galery1 {
+  background: url("/img/juis.jpg") no-repeat;
+}
+.galery2 {
+  background: url("/img/food.jpg") no-repeat;
+}
+.galery3 {
+  background: url("/img/cookis.jpg") no-repeat;
+}
+.galery__h2 {
+  background: #fff;
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  color: #274c5b;
+  border-radius: 20px;
+  padding: 33px 83px;
+}
+.galery__h2:hover {
+  background: #efd372;
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-bottom: 100px;
+    padding: 107px;
+  }
+  .galery {
+    height: 480px;
+  }
+  .galery__h2 {
+    padding: 33px 63px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    margin-bottom: 50px;
+  }
+  .container {
+    padding: 10px 10px;
+  }
+  .galery {
+    height: 300px;
+  }
+  .galery__h2 {
+    padding: 23px 43px;
+  }
+}

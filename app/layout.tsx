@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Newsletter from "@/components/Newsletter/Newsletter";
-
+import { CartContextProvider } from "@/components/CartContext/CartContext";
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
@@ -37,10 +37,12 @@ export default function RootLayout({
         className={`${openSans.variable} ${roboto.variable} ${yellowTail.variable}`}
       >
         <div className="container">
-          <Navbar />
-          {children}
-          <Newsletter />
-          <Footer />
+          <CartContextProvider>
+            <Navbar />
+            {children}
+            <Newsletter />
+            <Footer />
+          </CartContextProvider>
         </div>
       </body>
     </html>
