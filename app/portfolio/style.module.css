@@ -1,0 +1,74 @@
+.banner {
+  width: 100%;
+  height: 520px;
+}
+
+.portfolio {
+  gap: 57px;
+  padding: 40px;
+  text-align: left;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.portfoilo:hover {
+  color: rgb(55, 84, 109);
+}
+.portfoilo {
+  transition: 0.5s;
+  color: #d9cbcb;
+  gap: 57px;
+  padding: 40px;
+  text-align: left;
+  display: flex;
+}
+
+.title {
+  transition: 0.3s;
+  color: #000000;
+  width: 241px;
+  height: 29px;
+  font-size: 25px;
+  height: 29.3px;
+  color: #274c5b;
+  font-family: var(--font-Roboto);
+}
+.title:hover {
+  color: #e4f1d0;
+}
+
+.category {
+  transition: 0.3s;
+  color: #000000;
+  font-family: var(--font-yellowtail);
+  color: #274c5b;
+  width: 400px;
+  height: 29px;
+  font-size: 22px;
+}
+.image {
+  width: 100%;
+}
+.category:hover {
+  color: #e4f1d0;
+}
+.imgWrap {
+  position: relative;
+}
+.card:hover .linkWrap {
+  opacity: 1;
+}
+.linkWrap {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  bottom: 25px;
+  left: 25px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
