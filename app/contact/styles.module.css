@@ -1,0 +1,162 @@
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog {
+  background: url(../../public/img/Background.jpg);
+  width: 100%;
+  height: 385px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(39, 76, 91);
+  font-family: var(--font-robto);
+  font-family: var(--font-openSans);
+}
+
+.info {
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contactImg {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.info_wrap {
+  border-radius: 20px;
+}
+
+.section_title {
+  max-width: 702px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  line-height: 1.3;
+  font-family: var(--font-robto);
+  font-family: var(--font-openSans);
+}
+
+.section_title {
+  font-size: 45px;
+}
+
+.p {
+  max-width: 680px;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  font-family: var(--font-robto);
+  font-family: var(--font-openSans);
+  width: 100%;
+  object-fit: cover;
+}
+
+.info_wrap {
+  color: var(--paragraph-color);
+  letter-spacing: 0.02em;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.info_items_wrap {
+  min-width: 380px;
+  border: 3px solid #eee;
+  width: 100px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 15px 50px 15px 15px;
+  max-width: 100%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.info_link_text {
+  margin: 0;
+  font-family: var(--font-robto);
+  font-family: var(--font-openSans);
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.info_items_wrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--font-robto);
+  font-family: var(--font-openSans);
+  max-width: 100%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.info_link__a {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.info_link__a {
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 100%;
+  background: rgb(239, 246, 241);
+  color: rgb(39, 76, 91);
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.info_ins {
+  padding-top: 49px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.insta_info {
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50%;
+  background: rgb(239, 246, 241);
+  color: rgb(39, 76, 91);
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .info_ins {
+    justify-content: center;
+  }
+}
+
+.container_img {
+  background: url(../../public/img/plagin.jpg);
+  border-radius: 30px;
+  width: 1400px;
+  height: 758px;
+}
+
+.location_content {
+  background: white;
+}
