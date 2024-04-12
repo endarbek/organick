@@ -1,6 +1,6 @@
 import { BlogResponse, BlogsResponse } from "@/types/blogs";
 import { ExpertResponse } from "@/types/experts";
-import { OrganicResponse } from "@/types/organic";
+import { OrganicItemResponse, OrganicResponse } from "@/types/organic";
 import { ProductResponse, ProductsResponse } from "@/types/products";
 import { SlidersResponse } from "@/types/slider";
 import ky from "ky";
@@ -71,7 +71,7 @@ export const fetchProductsRecomended = (): Promise<ProductsResponse> => {
 export const fetchOrganics = (): Promise<OrganicResponse> => {
   return strapi.get("organics?populate=image").json();
 };
-export const fetchOrganic = (id: number): Promise<OrganicResponse> => {
+export const fetchOrganic = (id: number): Promise<OrganicItemResponse> => {
   return strapi.get(`organics/${id}?populate=image`).json();
 };
 export const fetchExperts = (): Promise<ExpertResponse> => {
