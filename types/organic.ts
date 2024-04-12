@@ -85,3 +85,4 @@ export interface Medium {
   url: string;
 }
 export type OrganicResponse = StrapiResponse<IOrganic[]>;
+export type OrganicItemResponse = StrapiResponse<IOrganic>;
