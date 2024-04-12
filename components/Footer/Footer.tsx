@@ -63,10 +63,10 @@ const Footer = () => {
           <Link className={styles.pages__links} href="not-found">
             404
           </Link>
-          <Link className={styles.pages__links} href="#">
+          <Link className={styles.pages__links} href="protect">
             Password Protected
           </Link>
-          <Link className={styles.pages__links} href="#">
+          <Link className={styles.pages__links} href="licenses">
             Licences
           </Link>
           <Link className={styles.pages__links} href="#">
