@@ -29,6 +29,10 @@ const Product = ({ products }: IProductProps) => {
               alt={product.image.name}
               width={335}
               height={324}
+              sizes="100vw"
+              style={{
+                width: "100%",
+              }}
             />
             <div className={styles.product__rating}>
               <h1
