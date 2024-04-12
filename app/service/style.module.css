@@ -1,0 +1,153 @@
+.aside {
+  background: url(/ServiceApple.jpg);
+  width: 100%;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asideTitle {
+  font-family: var(--font-Roboto);
+  color: #274c5b;
+  font-size: 50px;
+}
+
+.foot {
+  font-family: var(--font-yellowtail);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7eb693;
+}
+
+.body {
+  font-family: var(--font-Roboto);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #274c5b;
+}
+
+.figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info1 {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  flex-wrap: wrap;
+}
+.info2 {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.video {
+  font-family: var(--font-yellowtail);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7eb693;
+  margin: 0;
+}
+
+.text1 {
+  font-family: var(--font-Roboto);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #274c5b;
+  margin: 0;
+}
+
+.text2 {
+  font-family: var(--font-Open Sans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  text-align: center;
+  color: #274c5b;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 1220px;
+  width: 100%;
+  background: url(/img/Photo.jpg);
+  flex-wrap: wrap;
+}
+
+.wrapp {
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    width: 550px;
+  }
+}
+.futBtn {
+  transition: 0.3s;
+  color: #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background: #7eb693;
+  cursor: pointer;
+}
+.futBtn:hover {
+  box-shadow: 0px 5px 15px 5px #585858;
+  background: #274c5b;
+}
+
+.btnSer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #274c5b;
+  border-radius: 10px;
+  background-color: white;
+  color: #274c5b;
+  transition: 0.2s;
+}
+.btnSer:hover {
+  background: #274c5b;
+  color: white;
+}
+
+.btn a {
+  text-decoration: none;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

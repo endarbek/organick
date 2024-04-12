@@ -10,7 +10,7 @@ const page = () => {
       <figure className={styles.figure}>
         <div className={styles.image}>
           <Image
-            src="/Image.png"
+            src="/Image-about.png"
             alt=""
             width={600}
             height={600}

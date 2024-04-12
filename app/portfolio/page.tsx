@@ -1,7 +1,7 @@
-import React from "react";
+import Portfolio from "@/components/PortfolioCard/Portfolio";
+import { fetchOrganics } from "@/utils/api/requrs";
 
-const page = () => {
-  return <div>Portfolio</div>;
-};
-
-export default page;
+export default async function PortfolioPage() {
+  const data = await fetchOrganics();
+  return <Portfolio organic={data.data} />;
+}
