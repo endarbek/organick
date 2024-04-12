@@ -25,6 +25,32 @@ const queryProduct = qs.stringify({
 export const fetchProducts = (): Promise<ProductsResponse> => {
   return strapi.get("products?populate=image,categories").json();
 };
+export const fetchProductsName = (
+  searchItem: string
+): Promise<ProductsResponse> => {
+  // const item = searchItem.toString();
+  const query = (item: string) =>
+    qs.stringify(
+      {
+        filters: {
+          title: {
+            $contains: item,
+          },
+        },
+        populate: {
+          image: true,
+          categories: true,
+        },
+      },
+      {
+        encodeValuesOnly: true, // prettify URL
+      }
+    );
+  return ky
+    .get(`${process.env.NEXT_PUBLIC_STRAPI}/products?${query(searchItem)}`)
+    .json();
+};
+
 export const fetchProduct = (id: number): Promise<ProductResponse> => {
   return strapi.get(`products/${id}?${queryProduct}`).json();
 };
@@ -39,7 +65,7 @@ export const fetchBlog = (id: number): Promise<BlogResponse> => {
 };
 export const fetchProductsRecomended = (): Promise<ProductsResponse> => {
   return strapi
-    .get("products?filters[recomended][$eq]=true&populate=image")
+    .get("products?filters[recomended][$eq]=true&populate=image,categories")
     .json();
 };
 export const fetchOrganics = (): Promise<OrganicResponse> => {

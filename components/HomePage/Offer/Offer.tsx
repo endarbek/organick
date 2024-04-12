@@ -31,7 +31,7 @@ const Offer = ({ recomended }: IProductProps) => {
         <div className={styles.products}>
           {recomended.map((product) => (
             <div key={product.id} className={styles.product}>
-              <p className={styles.product__p}>{product.name}</p>
+              <p className={styles.product__p}>{product.categories?.title}</p>
               <Image
                 onClick={() => router.push(`shop-single/${product.id}`)}
                 className={styles.product__image}
@@ -39,6 +39,10 @@ const Offer = ({ recomended }: IProductProps) => {
                 alt="dsfsda"
                 width={270}
                 height={270}
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                }}
               />
               <div className={styles.product__rating}>
                 <h1

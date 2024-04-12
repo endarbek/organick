@@ -42,7 +42,6 @@ const ShopSingle = ({ product }: IProduct) => {
             sizes="100vw"
             style={{
               width: "100%",
-              height: "100%",
             }}
           />
           <p className={styles.product__p}>{product.categories?.title}</p>
@@ -98,13 +97,13 @@ const ShopSingle = ({ product }: IProduct) => {
       <div className={styles.wrapper}>
         <div className={styles.products}>
           {product.related?.map((relate) => (
-            <div key={product.id} className={styles.product}>
+            <div key={relate.id} className={styles.product}>
               <p className={styles.product__pp}>{relate.categories?.title}</p>
               <Image
                 onClick={() => router.push(`${relate.id}`)}
                 className={styles.product__image}
                 src={`/img/${relate.image.name}`}
-                alt={relate.image.name}
+                alt={relate.title}
                 width={335}
                 height={324}
               />
@@ -118,7 +117,7 @@ const ShopSingle = ({ product }: IProduct) => {
                 <hr className={styles.line} />
                 <div className={styles.rating}>
                   <div className={styles.price}>
-                    <h3 className={styles.price__h3}>$20.00</h3>
+                    <h3 className={styles.price__h33}>$20.00</h3>
                     <h2
                       className={styles.price__h2}
                     >{`$${relate.price}.00`}</h2>

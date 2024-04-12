@@ -6,7 +6,6 @@ import Quantity from "../Quantity/Quantity";
 import { useCartContext } from "../CartContext/CartContext";
 import { useState } from "react";
 import { BasketProduct } from "@/types/products";
-import { log } from "console";
 
 interface Count {
   item: BasketProduct;

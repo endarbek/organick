@@ -21,7 +21,6 @@ export default async function Home() {
   const dataProducts = await fetchProducts();
   const dataRecomended = await fetchProductsRecomended();
   const dataSliders = await fetchSliders();
-
   return (
     <div className={styles.container}>
       <Banner />
