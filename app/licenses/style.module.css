@@ -1,0 +1,56 @@
+.aside {
+  background-image: url(/Licenses.jpg);
+  max-width: 100%;
+  height: 345px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(39, 76, 91);
+  background-color: #dddddd;
+  font-size: 30px;
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.mainConTop {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* gap: 50px; */
+}
+.mainTitileTop {
+  font-family: var(--font-roboto);
+  color: #274c5b;
+  width: 293px;
+}
+.mainText {
+  color: #525c60;
+}
+.mainConMid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* gap: 102px; */
+}
+.mainTitleMid {
+  font-family: var(--font-roboto);
+  color: #274c5b;
+  width: 296px;
+}
+.mainConBottom {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* gap: 80px; */
+}
+.mainTitleBottom {
+  font-family: var(--font-roboto);
+  color: #274c5b;
+  width: 299px;
+}

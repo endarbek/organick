@@ -69,6 +69,14 @@ const page = () => {
             </div>
           </div>
           <div className={styles.figureImageInfoCon}>
+            <div className={styles.figgureImageInfo}>
+              <h1 className={styles.figureImageTitle}>Speciality Produce</h1>
+              <p className={styles.figureImageText}>
+                Sed ut perspiciatis unde omnis iste natus error sit <br />{" "}
+                voluptat. page editors now use Lorem Ipsum as their <br />{" "}
+                default model text, and auncover.
+              </p>
+            </div>
             <div className={styles.figureImage}>
               <Image
                 className={styles.figureJpg}
@@ -82,17 +90,35 @@ const page = () => {
                 }}
               />
             </div>
-            <div className={styles.figgureImageInfo}>
-              <h1 className={styles.figureImageTitle}>Speciality Produce</h1>
-              <p className={styles.figureImageText}>
-                Sed ut perspiciatis unde omnis iste natus error sit <br />{" "}
-                voluptat. page editors now use Lorem Ipsum as their <br />{" "}
-                default model text, and auncover.
-              </p>
-            </div>
           </div>
         </div>
       </figure>
+      <aside className={styles.aside}>
+        <div className={styles.asideTitleCon}>
+          <h1 className={styles.asideTitle}>We farm your land</h1>
+          <p className={styles.asideText}>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking a <br /> layout. The
+            point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to <br /> using Content here,
+            content here, making it look like readable English.
+          </p>
+        </div>
+        <div className={styles.asideButtonCon}>
+          <div className={styles.asideBtn1}>
+            <div className={styles.asideBtnNumber1}>
+              <h1 className={styles.number}>01</h1>
+            </div>
+            <h1 className={styles.asideTitels}>Best quality support</h1>
+          </div>
+          <div className={styles.asideBtn2}>
+            <div className={styles.asideBtnNumber2}>
+              <h1 className={styles.number}>02</h1>
+            </div>
+            <h1 className={styles.asideTitels}>Money back guarantee</h1>
+          </div>
+        </div>
+      </aside>
     </div>
   );
 };
