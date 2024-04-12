@@ -1,45 +1,68 @@
 import Image from "next/image";
 import styles from "./styles.module.css"
 import { transform } from "next/dist/build/swc";
-const page = () => {
-  return <div>Blog
-    <h1 className={styles.blog}>Recent News</h1>
-    <div>
-
-      <div className={styles.content} >
-
-
-        <div className={styles.wrap} >
-          <Image className={styles.image} src="/img/Gras.jpg" alt="Gras" width={677} height={424} />
-          <div className={styles.cardblock}>
-
-
-            <div className={styles.cardlog}>
-
-            <h4 className={styles.userTopText} >
-              <Image className={styles.vectorImage} src="/img/Vector.svg" alt="vector" width={18} height={20} />
-              By Rachi Card
-            </h4>
-
-            <h3 className={styles.topTextBold}>The Benefits of Vitamin D & How to Get It</h3>
-            <p className={styles.contentText}>Simply dummy text of the printing and typesetting <br />industry. Lorem Ipsum</p>
-      
-            <a className={styles.card} href="#">Read More <button className={styles.btnCardb}  > <Image className={styles.vectorImage} src="/img/Aerrow.png" alt="vector" width={19} height={19} /></button> </a>
-
-
-          </div>
-
-          </div>
-
+import { fetchBlogs } from "@/utils/api/requrs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleRight, faUser } from "@fortawesome/free-solid-svg-icons";
+import Button from "@/components/shared/UI/Button/Button";
+import Link from "next/link";
+const page = async () => {
+  const data = await fetchBlogs()
+  const blogs = data.data;
+  return <div>
+    <h1 className={styles.recent}>Recent News</h1>
+    <div className={styles.container}>
+      {/* <div className={styles.content}>
+        <div className={styles.heading}>
+          <h5 className={styles.heading__h5}>News</h5>
+          <p className={styles.heading__p}>
+            Discover weekly content about organic food, & more
+          </p>
         </div>
-
-
-        <div className={styles.wrap}>
-          <Image className={styles.image} src="/img/Potato.jpg" alt="Potato" width={677} height={424} />
-          <div className={styles.cardblock}></div>
-        </div>
-
-        {/* <Image className={styles.text} src="/img/Date.png" alt="Date" width={82} height={82} /> */}
+        <Link href="blog" className={styles.link}>
+          <Button background={"white"}>
+            More News <FontAwesomeIcon icon={faArrowAltCircleRight} />
+          </Button>
+        </Link>
+      </div> */}
+      <div className={styles.blogs}>
+        {blogs.map((blog) => (
+          <div className={styles.blog} key={blog.id}>
+            <div className={styles.ellipse}>
+              <h4 className={styles.blog__h4}>
+                25 <span className={styles.blog_h4_span}> Nov</span>
+              </h4>
+            </div>
+            <Image
+              src={`/img/${blog.image.name}`}
+              className={styles.image}
+              alt={blog.title}
+              width={500}
+              height={500}
+            />
+            <div className={styles.description}>
+              <div className={styles.admin}>
+                <FontAwesomeIcon icon={faUser} className={styles.admin__icon} />
+                <h6 className={styles.admin__h6}>By Rachi Card</h6>
+              </div>
+              <div className={styles.display}>
+                <h6
+                  className={styles.display__h6}
+                  // onClick={() => router.push(`blog-single/${blog.id}`)}
+                >
+                  {blog.title}
+                </h6>
+                <h4 className={styles.display__h4}>
+                  Simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum
+                </h4>
+              </div>
+              <Button background={"yellow"}>
+                Read More <FontAwesomeIcon icon={faArrowAltCircleRight} />
+              </Button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   </div >

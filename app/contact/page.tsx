@@ -67,15 +67,72 @@ const page = () => {
                         </div>
                         <div className={styles.card_info}>
                             <div className={styles.container_img}>
+                                <div className={styles.plagin}>
+                                    {/* <Image src="/img/plagin.jpg" alt="" width={1400} height={756} /> */}
                                 <div className={styles.location_content}>
+                                    <div className={styles.info_card}>
+                                        <p className={styles.subtitle}>Location</p>
+                                        <h2 className={styles.sectiontitle}>Our Farms</h2>
+                                        <p className={styles.par}>
+                                            Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using.
+                                        </p>
+                                        <div className={styles.icon}>
+                                            <Image src="./img/Icon (1).svg" alt="Gamil" width={50} height={50} />
+                                            <div className={styles.txt}>
+                                                <h2 className={styles.txt2}>New York, USA:</h2>
+                                                <p className={styles.txt1}>299 Park Avenue New York,
+                                                    New York 10171</p>
+                                            </div>
+                                        </div>
+                                        <div className={styles.icon}>
+                                            <Image src="./img/Icon (1).svg" alt="Gamil" width={50} height={50} />
+                                            <div className={styles.txt}>
+                                                <h2 className={styles.txt2}>London, UK:</h2>
+                                                <p className={styles.txt1}>30 Stamford Street,
+                                                    London SE1 9LQ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
-
-
                         </div>
-
-
                     </div>
+                    <div className={styles.opnim}>
+                        <div className={styles.container_w_container}>
+                            <div className={styles.w_form}>
+                                <div className={styles.form_info}>
+                                    <div className={styles.w_form_info}>
+                                        <label form="full-name" className={styles.label_info} htmlFor="">Full Name*</label>
+                                        <input className={styles.info_input} maxLength={256} name="name-2" data-name="Name 2" placeholder="Enter Your Name" type="text" id="full-name" />
+                                    </div>
+                                    <div className={styles.w_form_info}>
+                                        <label form="full-name" className={styles.label_info} htmlFor="">Your Email*</label>
+                                        <input className={styles.info_input} maxLength={256} name="name-2" data-name="Name 2" placeholder="example@yourmail.com" type="text" id="full-name" />
+                                    </div>
+                                </div>
+                                <div className={styles.form_info}>
+                                    <div className={styles.w_form_info}>
+                                        <label form="full-name" className={styles.label_info} htmlFor="">Company*</label>
+                                        <input className={styles.info_input} maxLength={256} name="name-2" data-name="Name 2" placeholder="yourcompany name here" type="text" id="full-name" />
+                                    </div>
+                                    <div className={styles.w_form_info}>
+                                        <label form="full-name" className={styles.label_info} htmlFor="">Subject*</label>
+                                        <input className={styles.info_input} maxLength={256} name="name-2" data-name="Name 2" placeholder="how can we help" type="text" id="full-name" />
+                                    </div>
+                                </div>
+                                <div className={styles.form_info}>
+                                    <div className={styles.w_form_info}>
+                                        <label form="full-name" className={styles.label_info} htmlFor="">Message</label>
+                                        <input className={styles.info_input_m} maxLength={5000} name="field" data-name="field" placeholder="Hello There, I would like to..." type="text" id="message" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button className={styles.btn_info}>Send Message</button>
+                        </div>
+                    </div>
+
+
 
                 </div>
 
@@ -83,6 +140,8 @@ const page = () => {
 
 
         </div>
+
+
 
     </div >
 
