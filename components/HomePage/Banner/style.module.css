@@ -48,10 +48,9 @@
 }
 @media screen and (max-width: 600px) {
   .content {
-    align-items: center;
+    align-items: flex-start;
   }
   .content__h1 {
-    text-align: center;
     font-size: 40px;
   }
 }
